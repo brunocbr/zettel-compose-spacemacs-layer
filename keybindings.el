@@ -7,7 +7,7 @@
                         :suppress-index t
                         :watch t
                         :no-title t
-                        :stream-to-marked t
+                        :stream-to-marked nil
                         :no-commented-references t
                         :output (expand-file-name "~/Downloads/OUTPUT.md"))))
     (zettel-compose-run options)
