@@ -8,6 +8,7 @@
                         :watch t
                         :no-title t
                         :stream-to-marked t
+                        :no-commented-references t
                         :output (expand-file-name "~/Downloads/OUTPUT.md"))))
     (zettel-compose-run options)
     (message "Generated output for %s" (buffer-file-name))))
