@@ -41,10 +41,20 @@ This layer provides two main commands that are bound to Spacemacs keybindings, a
 
 ### Available Keybindings
 
-- `SPC m a Z Z`: Run the `zettel-compose.py` script with options (prompts for output file and options).
-- `SPC m a Z S`: Stop all running `zettel-compose` processes.
+The following keybindings are provided, all under the prefix `SPC a Z`:
 
-### Running Zettel-Compose
+| Keybinding  | Description                                                                                   |
+|-------------|-----------------------------------------------------------------------------------------------|
+| `SPC a Z Z` | Run `zettel-compose-run` for the current buffer with interactive options.                     |
+| `SPC a Z o` | Run `zettel-compose-generate-output`, which executes the script with specific output options. |
+| `SPC a Z S` | Stop all running asynchronous `zettel-compose` processes.                                     |
+| `SPC a Z h` | Generate a handout using `zettel-compose-generate-handout`.                                   |
+| `SPC a Z H` | Stream a handout to Marked using `zettel-compose-stream-handout`.                             |
+| `SPC a Z b` | Browse the connected notes using `zettel-compose-browse`.                                     |
+|             |                                                                                               |
+
+
+### Running the Zettel Composer
 
 To run `zettel-compose`, simply type:
 
@@ -59,7 +69,7 @@ You will be prompted for an output file and asked if you want to stream to the m
 If you have any running `zettel-compose` processes, you can stop them by typing:
 
 ```
-SPC m a Z s
+SPC m a Z S
 ```
 
 This will terminate all active `zettel-compose` processes.
