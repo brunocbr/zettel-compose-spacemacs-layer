@@ -52,7 +52,9 @@ The following keybindings are provided, all under the prefix `SPC a Z`:
 | `SPC a Z H` | Stream a handout to Marked using `zettel-compose-stream-handout`.                             |
 | `SPC a Z b` | Browse the connected notes using `zettel-compose-browse`.                                     |
 |             |                                                                                               |
+### Tip
 
+If you'd like to customize the keybindings to your own needs, you can clone the repository and modify `keybindings.el` to better suit your workflow.
 
 ### Running the Zettel Composer
 
