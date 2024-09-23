@@ -3,7 +3,6 @@
   (interactive)
   (let* ((options (list :index-file (buffer-file-name)
                         :custom-url "x-phi://"
-                        :parallel-texts-selection "r"
                         :suppress-index t
                         :watch t
                         :no-title t
