@@ -44,6 +44,7 @@
   "Run zettel-compose.py with browsing options based on the current buffer."
   (interactive)
   (let* ((options (list :index-file (buffer-file-name)
+                        :output (expand-file-name "~/Downloads/OUTPUT.md")
                         :watch t
                         :link-all t
                         :stream-to-marked t
